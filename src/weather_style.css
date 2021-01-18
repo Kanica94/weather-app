@@ -1,0 +1,76 @@
+input {
+  padding: 4px;
+  border-radius: 5px;
+}
+
+h3 {
+  padding-top: 10px;
+  color: #414040;
+}
+
+h2 {
+  position: relative;
+  top: 25px;
+  color: #414040;
+}
+
+h6 {
+  color: #414040;
+}
+
+li {
+  font-size: 14px;
+  position: relative;
+  top: 10px;
+  color: #555454;
+  list-style: none;
+}
+
+.tableone {
+  text-align: center;
+  color: #555454;
+}
+
+.tabletwo {
+  text-align: center;
+  color: #555454;
+}
+
+.temp,
+.temptwo {
+  border: 1px solid #414040;
+  background: rgb(173, 209, 252);
+  color: #414040;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 1px 2px;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  border-radius: 4px;
+}
+
+.temp:hover,
+.temptwo:hover {
+  cursor: pointer;
+  background: #414040;
+  color: rgb(173, 209, 252);
+}
+
+.temp {
+  margin-left: 5px;
+}
+
+.myName {
+  color: #414040;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 14px;
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+}
+
+.card.p-4.mt-4.rounded {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  margin: 0px auto;
+}
