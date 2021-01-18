@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    :
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/weather_style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b8122695a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card p-4 mt-4 rounded" style="width: 30rem">
+        <div class="card-body">
+          <form id="search">
+            <input
+              type="text"
+              placeholder="Enter a City..."
+              autocomplete="off"
+              size="35"
+              id="enter-city"
+            />
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+            <button type="button" id="location" class="btn btn-outline-dark">
+              <i class="fas fa-map-marker-alt"></i>
+            </button>
+          </form>
+          <h3 id="city-name"></h3>
+          <h6 id="date"></h6>
+          <div class="row">
+            <div class="col-3"><h2 id="mainTemp">°C</h2></div>
+            <div class="col-4">
+              <img src="images/sun.png" width="90px" alt="sun" />
+            </div>
+            <div class="col-5">
+              <ul>
+                <li id="description"></li>
+                <li>
+                  <strong><span id="max"></span></strong> |
+                  <span id="min"></span>
+                </li>
+                <li id="wind"></li>
+                <li id="humidity"></li>
+              </ul>
+            </div>
+          </div>
+          <button id="celsius" class="temp">°C</button>
+          <button id="fahrenheit" class="temptwo">°F</button>
+          <br />
+          <br />
+          <hr />
+          <div class="tableone">
+            <div class="row">
+              <div class="col-2">
+                Now <br />
+                <img src="images/sun.png" width="50px" alt="sun" /><br />
+                10°
+              </div>
+              <div class="col-2">
+                14:00 <br />
+                <img src="images/sun.png" width="50px" alt="sun" /><br />
+                8°
+              </div>
+              <div class="col-2">
+                15:00 <br />
+                <img
+                  src="images/sun&cloud.png"
+                  width="50px"
+                  alt="sun&cloud"
+                /><br />
+                8°
+              </div>
+              <div class="col-2">
+                16:00 <br />
+                <img
+                  src="images/darkclouds.png"
+                  width="50px"
+                  alt="darkclouds"
+                /><br />
+                6°
+              </div>
+              <div class="col-2">
+                17:00 <br />
+                <img
+                  src="images/darkclouds.png"
+                  width="50px"
+                  alt="darkclouds"
+                /><br />
+                5°
+              </div>
+              <div class="col-2">
+                18:00 <br />
+                <img
+                  src="images/darkclouds.png"
+                  width="50px"
+                  alt="darkclouds"
+                /><br />
+                4°
+              </div>
+            </div>
+          </div>
+          <hr />
+          <br />
+
+          <div class="tabletwo">
+            <div class="row">
+              <div class="col-4">SUN</div>
+              <div class="col-4">
+                <img
+                  src="images/darkclouds.png"
+                  width="30px"
+                  alt="darkclouds"
+                />
+              </div>
+              <div class="col-4"><strong>8°</strong> | 6°</div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-4">MON</div>
+              <div class="col-4">
+                <img
+                  src="images/darkclouds.png"
+                  width="30px"
+                  alt="darkclouds"
+                />
+              </div>
+              <div class="col-4"><strong>6°</strong> | 4°</div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-4">TUE</div>
+              <div class="col-4">
+                <img src="images/sun.png" width="30px" alt="sun" /><br />
+              </div>
+              <div class="col-4"><strong>7°</strong> | 5°</div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-4">WED</div>
+              <div class="col-4">
+                <img src="images/snow.png" width="30px" alt="snow" />
+              </div>
+              <div class="col-4"><strong>4°</strong> | 0°</div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-4">THU</div>
+              <div class="col-4">
+                <img src="images/rain.png" width="30px" alt="rain" />
+              </div>
+              <div class="col-4"><strong>5°</strong> | 1°</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h5 class="myName">Coded by Kanica Sabharwal</h5>
+    </div>
+    <script src="src/indexWk5.js"></script>
+  </body>
+</html>
